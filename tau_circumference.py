@@ -2,24 +2,26 @@
 
 # Created by Samuel Webster
 # Created on March 2022
-# This program calculates the circumference of a circle
-#     with inputted radius
-
-
-import constants
+# This program includes a while loop
 
 
 def main():
     # I calculate circumference
 
     # input
-    radius = int(input("Enter radius of the circle in mm: "))
+    string_highest_number = input("Enter your highest positive integer: ")
+    total = 0
+    i = 0
 
-    # process
-    circumference = constants.TAU * radius
-
-    # output
-    print("Circumference is {} mm.".format(circumference))
+    # process & output
+    try:
+        int_highest_number = int(string_highest_number)
+        while i < int_highest_number:
+            total += i + 1
+            i += 1
+        print("Sum of positive integers up to {1} is {2}.".format(int_highest_number, total))
+    except Exception:
+        print("Invalid Input")
     print("\nDone.")
 
 
