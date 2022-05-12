@@ -17,9 +17,13 @@ def main():
     try:
         int_highest_number = int(string_highest_number)
         while i < int_highest_number:
-            total += i + 1
             i += 1
-        print("Sum of positive integers up to {1} is {2}.".format(int_highest_number, total))
+            total += i
+        print(
+            "Sum of positive integers up to {0} is {1}.".format(
+                int_highest_number, total
+            )
+        )
     except Exception:
         print("Invalid Input")
     print("\nDone.")
