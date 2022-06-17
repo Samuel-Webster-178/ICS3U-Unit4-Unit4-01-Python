@@ -11,14 +11,14 @@ def main():
     # input
     string_highest_number = input("Enter your highest positive integer: ")
     total = 0
-    i = 0
+    counter1 = 0
 
     # process & output
     try:
         int_highest_number = int(string_highest_number)
-        while i < int_highest_number:
-            i += 1
-            total += i
+        while counter1 < int_highest_number:
+            counter1 += 1
+            total += counter1
         print(
             "Sum of positive integers up to {0} is {1}.".format(
                 int_highest_number, total
